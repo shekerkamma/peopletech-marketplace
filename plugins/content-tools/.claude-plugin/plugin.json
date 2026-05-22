@@ -1,0 +1,7 @@
+{
+  "name": "content-tools",
+  "version": "1.0.0",
+  "description": "Content creation and research toolkit: ingest from YouTube/LinkedIn/GitHub/web, knowledge graphs (graphify), draw.io diagrams, Excalidraw, video watching, screenshots, and web archiving.",
+  "author": {"name": "PeopleTech AI Engineering"},
+  "keywords": ["content", "research", "diagrams", "knowledge-graph", "video", "screenshots"]
+}

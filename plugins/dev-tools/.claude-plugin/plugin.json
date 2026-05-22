@@ -1,0 +1,7 @@
+{
+  "name": "dev-tools",
+  "version": "1.0.0",
+  "description": "Developer utilities: comprehensive code review, browser automation agent, project cheat sheets, account briefings, time display (PKT/JST), and weather data.",
+  "author": {"name": "PeopleTech AI Engineering"},
+  "keywords": ["code-review", "browser", "utilities", "developer"]
+}

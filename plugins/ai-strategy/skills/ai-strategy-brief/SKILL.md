@@ -1,0 +1,1 @@
+/home/shekerk/gstack/ai-strategy-brief/SKILL.md

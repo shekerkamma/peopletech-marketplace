@@ -1,0 +1,7 @@
+{
+  "name": "ai-strategy",
+  "version": "1.0.0",
+  "description": "AI strategy research and decision tools: executive briefs, strategy council (5 AI agents), comprehensive research reports, vertical scoring, and LLM council judgment.",
+  "author": {"name": "PeopleTech AI Engineering"},
+  "keywords": ["strategy", "research", "council", "scoring", "executive"]
+}

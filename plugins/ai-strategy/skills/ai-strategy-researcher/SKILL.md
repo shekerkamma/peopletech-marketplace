@@ -1,0 +1,1 @@
+/home/shekerk/gstack/ai-strategy-researcher/SKILL.md

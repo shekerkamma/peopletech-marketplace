@@ -1,0 +1,7 @@
+{
+  "name": "ai-analyst",
+  "version": "1.0.0",
+  "description": "AI-powered product analytics suite. 40+ sub-skills: explore data, run analysis, forecast, define metrics, design experiments, question framing, cohort analysis, and more.",
+  "author": {"name": "PeopleTech AI Engineering"},
+  "keywords": ["analytics", "data", "metrics", "forecasting", "experiments"]
+}

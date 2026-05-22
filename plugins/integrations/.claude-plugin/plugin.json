@@ -1,0 +1,7 @@
+{
+  "name": "integrations",
+  "version": "1.0.0",
+  "description": "Third-party integrations: Slack, Notion, Linear, Google Ads, Cal.com, Fireflies, Trigger.dev, Dub, Substack, Hacker News, Podscan, Postman, Scrape Creators, Firecrawl, Wikipedia, NotebookLM.",
+  "author": {"name": "PeopleTech AI Engineering"},
+  "keywords": ["slack", "notion", "linear", "integrations", "api"]
+}

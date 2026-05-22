@@ -1,25 +1,23 @@
 # PeopleTech Plugin Marketplace
 
 Private Claude Code plugin marketplace for the PeopleTech AI Engineering team.
+**9 plugins, 120+ skills** — one marketplace registration, then install what you need.
 
-## Installation
-
-### 1. Register this marketplace (one time)
+## Quick Start
 
 ```bash
+# 1. Register this marketplace (one time)
 /plugin marketplace add https://github.com/shekerkamma/peopletech-marketplace
-```
 
-### 2. Install plugins
-
-```bash
-# Full AI engineering workflow (browser, QA, ship, review, design, etc.)
+# 2. Install everything (or pick what you need below)
 /plugin install gstack@peopletech-marketplace
-
-# CLI interface builder for any GUI app
+/plugin install ai-analyst@peopletech-marketplace
+/plugin install presentation-suite@peopletech-marketplace
+/plugin install ai-strategy@peopletech-marketplace
+/plugin install content-tools@peopletech-marketplace
+/plugin install integrations@peopletech-marketplace
+/plugin install dev-tools@peopletech-marketplace
 /plugin install cli-anything@peopletech-marketplace
-
-# PeopleTech deck workspace AI Layer (hooks, skills, MCP, subagent)
 /plugin install peopletech-ai-layer@peopletech-marketplace
 ```
 
@@ -27,44 +25,60 @@ Private Claude Code plugin marketplace for the PeopleTech AI Engineering team.
 
 | Plugin | Skills | What it does |
 |--------|--------|-------------|
-| **gstack** | 35+ | Browser automation, QA testing, code review, ship/deploy, design consultation, investigation, plan reviews, retros |
-| **cli-anything** | 5 | Build CLI interfaces for any GUI app, skill generator, harness methodology |
-| **peopletech-ai-layer** | 1 | Self-improving CLAUDE.md hooks, customer-facing review skill, explorer subagent, codebase-search MCP |
+| **gstack** | 37 | Browser automation, QA, ship, review, deploy, design, investigate, plan reviews, retros |
+| **ai-analyst** | 40 | Product analytics: explore data, run analysis, forecast, define metrics, design experiments, cohort analysis |
+| **presentation-suite** | 10 | Create slides, themes, export PDF/PNG, speaker notes, accessibility, architecture presentations |
+| **ai-strategy** | 5 | Executive briefs, strategy council (5 AI agents), research reports, vertical scoring, LLM council |
+| **content-tools** | 7 | Ingest from YouTube/LinkedIn/GitHub/web, knowledge graphs, draw.io, Excalidraw, screenshots |
+| **integrations** | 16 | Slack, Notion, Linear, Google Ads, Cal.com, Fireflies, Trigger.dev, Dub, Substack, Hacker News, Podscan, Postman, Firecrawl, Wikipedia, NotebookLM |
+| **dev-tools** | 8 | Code review, browser agent, cheat sheets, account briefings, time/weather utilities |
+| **cli-anything** | 5 | CLI interface builder for any GUI app, skill generator |
+| **peopletech-ai-layer** | 4 | Self-improving CLAUDE.md hooks, review skill, explorer subagent, codebase-search MCP |
 
 ## Plugin Details
 
-### gstack
+### gstack (37 skills)
 
 Source: [garrytan/gstack](https://github.com/garrytan/gstack)
 
-Key skills: `/browse`, `/qa`, `/ship`, `/review`, `/investigate`, `/design-review`, `/plan-ceo-review`, `/plan-eng-review`, `/retro`, `/land-and-deploy`, `/canary`, `/health`, `/checkpoint`
+`/browse` `/qa` `/ship` `/review` `/investigate` `/design-review` `/plan-ceo-review` `/plan-eng-review` `/retro` `/land-and-deploy` `/canary` `/health` `/checkpoint` `/careful` `/guard` `/freeze` `/autoplan` `/office-hours` and more.
 
-**Note:** This marketplace packages the skills only (6MB). For the full gstack with headless browser binaries, clone from source:
+**Note:** This marketplace packages skills only (6MB). For `/browse` and `/qa` with headless browser, also run:
 ```bash
-git clone https://github.com/garrytan/gstack.git ~/.claude/skills/gstack
-cd ~/.claude/skills/gstack && npm install
+cd ~/.claude/plugins/*/gstack && npm install
 ```
 
-### cli-anything
+### ai-analyst (40 skills)
 
-Source: cli-anything contributors
+Full analytics pipeline: `/analyze` then sub-skills for explore-data, run-analysis, forecast, define-metric, design-experiment, question-framing, cohort-analysis, data-quality-check, stakeholder-comms, and 30+ more.
 
-Skills: `/cli-anything`, `/list`, `/refine`, `/test`, `/validate`
+### presentation-suite (10 skills)
 
-### peopletech-ai-layer
+`/presentation` `/presentation-theme` `/presentation-exporter` `/presentation-speaker-notes` `/presentation-accessibility` `/presentation-content-writer` `/architecture-presentation`
 
-Source: PeopleTech AI Engineering
+### ai-strategy (5 skills)
 
-Includes: self-improving CLAUDE.md hooks, customer-facing review skill, read-only explorer subagent, AST-based codebase-search MCP server.
+`/ai-strategy-brief` `/ai-strategy-council` `/ai-strategy-researcher` `/vertical-scorer` `/llm-council`
 
-## For Maintainers
+### content-tools (7 skills)
 
-To update plugins:
-```bash
-# Update gstack skills from upstream
-cd plugins/gstack
-# sync skills from latest garrytan/gstack release
-```
+`/content-research` `/graphify` `/drawio` `/excalidraw` `/watch` `/ss` `/archive-is`
+
+### integrations (16 skills)
+
+`/slack` `/notion` `/linear` `/google-ads` `/cal-com` `/fireflies` `/trigger-dev` `/dub` `/substack` `/hackernews` `/podscan` `/postman-explore` `/scrape-creators` `/firecrawl` `/wikipedia` `/notebooklm`
+
+### dev-tools (8 skills)
+
+`/code-review-specialist` `/agent-browser` `/cheat` `/00-account-briefing` `/time-skill` `/time-tokyo` `/weather-fetcher` `/weather-fetcher-tokyo`
+
+### cli-anything (5 skills)
+
+`/cli-anything` `/list` `/refine` `/test` `/validate`
+
+### peopletech-ai-layer (4 components)
+
+Self-improving CLAUDE.md hooks (SessionStart + Stop reflector), customer-facing review skill, read-only explorer subagent, AST-based codebase-search MCP server.
 
 ## License
 

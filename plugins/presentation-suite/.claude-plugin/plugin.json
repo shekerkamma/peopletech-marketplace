@@ -1,0 +1,7 @@
+{
+  "name": "presentation-suite",
+  "version": "1.0.0",
+  "description": "Full presentation toolkit: create slides, manage themes, export PDF/PNG, speaker notes, accessibility audit, architecture presentations, and content writing.",
+  "author": {"name": "PeopleTech AI Engineering"},
+  "keywords": ["presentation", "slides", "deck", "export", "theme", "architecture"]
+}
