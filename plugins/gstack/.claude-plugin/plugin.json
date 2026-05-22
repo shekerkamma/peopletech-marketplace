@@ -1,0 +1,19 @@
+{
+  "name": "gstack",
+  "version": "0.16.2",
+  "description": "Claude Code skills + fast headless browser. 35+ skills: browse, QA, ship, review, deploy, design, investigate, and more. Full AI engineering workflow.",
+  "author": {
+    "name": "Garry Tan",
+    "url": "https://github.com/garrytan/gstack"
+  },
+  "homepage": "https://github.com/garrytan/gstack",
+  "keywords": [
+    "browser",
+    "qa",
+    "testing",
+    "devops",
+    "design",
+    "code-review",
+    "deploy"
+  ]
+}
