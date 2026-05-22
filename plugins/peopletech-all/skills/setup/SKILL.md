@@ -8,8 +8,8 @@ user_invocable: true
 
 # PeopleTech AI Layer — Installed
 
-All 10 plugins were auto-installed as dependencies of `peopletech-all`.
-You have **136 skills** available globally across all projects.
+All 11 plugins were auto-installed as dependencies of `peopletech-all`.
+You have **142 skills** available globally across all projects.
 
 ## What's installed
 
@@ -25,6 +25,7 @@ You have **136 skills** available globally across all projects.
 | cli-anything | 5 | CLI builder, skill generator |
 | peopletech-ai-layer | 4 | Self-improving hooks, MCP, explorer |
 | presales-tools | 4 | Contract review, explainer graphics, workflow viz, conversation prep |
+| skill-systems | 6 | Orchestrated pipelines: video-to-deck, deal prep, research-to-strategy, analytics-to-comms, architecture-to-everything, competitive intel |
 
 ## Post-install (optional)
 
@@ -40,3 +41,13 @@ Try any of these to confirm everything works:
 - `/cheat` — start a cheat sheet
 - `/analyze` — run product analytics
 - `/drawio` — generate a diagram
+
+## Skill Systems (orchestrated pipelines)
+
+These chain multiple child skills end-to-end — one command, walk away:
+- `/video-to-deck` — video → insights → explainer → full deck package
+- `/presales-deal-prep` — prospect research → strategy brief → contract review → meeting prep
+- `/research-to-strategy` — sources → knowledge graph → strategy council → slides
+- `/analytics-to-comms` — data question → analysis → infographic → slides → Slack
+- `/architecture-to-everything` — system → drawio + doc + pptx + interactive HTML
+- `/competitive-intel-sprint` — competitor video/content → scored analysis → exec brief

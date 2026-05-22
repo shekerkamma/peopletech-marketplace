@@ -1,7 +1,7 @@
 {
   "name": "peopletech-all",
-  "version": "2.1.0",
-  "description": "Meta-plugin: auto-installs ALL 10 PeopleTech plugins (136 skills) via dependencies. One install command, everything lands.",
+  "version": "3.0.0",
+  "description": "Meta-plugin: auto-installs ALL 11 PeopleTech plugins (142 skills) via dependencies. One install command, everything lands.",
   "author": {"name": "PeopleTech AI Engineering"},
   "keywords": ["meta", "all", "setup", "onboarding"],
   "dependencies": [
@@ -14,6 +14,7 @@
     "dev-tools@peopletech-marketplace",
     "cli-anything@peopletech-marketplace",
     "peopletech-ai-layer@peopletech-marketplace",
-    "presales-tools@peopletech-marketplace"
+    "presales-tools@peopletech-marketplace",
+    "skill-systems@peopletech-marketplace"
   ]
 }

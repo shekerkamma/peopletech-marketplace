@@ -1,0 +1,7 @@
+{
+  "name": "skill-systems",
+  "version": "1.0.0",
+  "description": "6 orchestrated skill systems: video-to-deck, presales-deal-prep, research-to-strategy, analytics-to-comms, architecture-to-everything, competitive-intel-sprint. Each chains multiple child skills into end-to-end business workflows with configurable onboarding.",
+  "author": {"name": "PeopleTech AI Engineering"},
+  "keywords": ["skill-systems", "orchestrator", "pipeline", "workflow", "automation"]
+}

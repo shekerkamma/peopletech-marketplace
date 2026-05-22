@@ -1,7 +1,7 @@
 # PeopleTech Plugin Marketplace
 
 Private Claude Code plugin marketplace for the PeopleTech AI Engineering team.
-**11 plugins, 136 skills** — two commands from zero to full AI Layer.
+**12 plugins, 142 skills** — two commands from zero to full AI Layer.
 
 ## Quick Start (2 commands)
 
@@ -9,11 +9,11 @@ Private Claude Code plugin marketplace for the PeopleTech AI Engineering team.
 # 1. Register this marketplace (one time)
 /plugin marketplace add https://github.com/shekerkamma/peopletech-marketplace
 
-# 2. Install everything — all 10 plugins auto-install as dependencies
+# 2. Install everything — all 11 plugins auto-install as dependencies
 /plugin install peopletech-all@peopletech-marketplace
 ```
 
-That's it. All 136 skills are now available globally.
+That's it. All 142 skills are now available globally.
 
 ## Pick and choose (alternative)
 
@@ -22,7 +22,7 @@ Don't want everything? Install individual plugins:
 ```bash
 /plugin install gstack@peopletech-marketplace
 /plugin install ai-analyst@peopletech-marketplace
-/plugin install presentation-suite@peopletech-marketplace
+/plugin install skill-systems@peopletech-marketplace
 # ... etc.
 ```
 
@@ -30,7 +30,8 @@ Don't want everything? Install individual plugins:
 
 | Plugin | Skills | What it does |
 |--------|--------|-------------|
-| **peopletech-all** | — | Meta-plugin: auto-installs all 10 plugins below via dependencies |
+| **peopletech-all** | — | Meta-plugin: auto-installs all 11 plugins below via dependencies |
+| **skill-systems** | 6 | Orchestrated pipelines: video-to-deck, deal prep, research-to-strategy, analytics-to-comms, architecture-to-everything, competitive intel |
 | **gstack** | 37 | Browser automation, QA, ship, review, deploy, design, investigate, plan reviews, retros |
 | **ai-analyst** | 40 | Product analytics: explore data, run analysis, forecast, define metrics, design experiments, cohort analysis |
 | **presentation-suite** | 10 | Create slides, themes, export PDF/PNG, speaker notes, accessibility, architecture presentations |
@@ -41,6 +42,21 @@ Don't want everything? Install individual plugins:
 | **cli-anything** | 5 | CLI interface builder for any GUI app, skill generator |
 | **peopletech-ai-layer** | 4 | Self-improving CLAUDE.md hooks, review skill, explorer subagent, codebase-search MCP |
 | **presales-tools** | 4 | Contract review, explainer graphics, workflow visualization, conversation prep |
+
+## Skill Systems (orchestrated pipelines)
+
+These are the highest-value plugin — each chains multiple child skills into an end-to-end business workflow. One command, walk away.
+
+| Skill System | Pipeline | Child Skills Used |
+|---|---|---|
+| `/video-to-deck` | Video → insights → explainer → full deck package | watch → content-research → explainer-graphic → architecture-presentation |
+| `/presales-deal-prep` | Prospect → strategy → contract → meeting prep | 00-account-briefing → ai-strategy-brief → contract-reviewer → difficult-conversation-prep |
+| `/research-to-strategy` | Sources → graph → council → slides | content-research → graphify → ai-strategy-council → presentation |
+| `/analytics-to-comms` | Data question → analysis → visual → Slack | analyze → explainer-graphic → presentation → slack |
+| `/architecture-to-everything` | System → 4 output formats | drawio → architecture-presentation → workflow-visualizer → notebooklm |
+| `/competitive-intel-sprint` | Competitor → scored analysis → exec brief | watch → content-research → ai-strategy-researcher → vertical-scorer → ai-strategy-brief |
+
+Each skill system has **configurable onboarding** — on first run, it asks your preferences (theme, output format, audience, etc.) and saves them. Every subsequent run uses your config silently.
 
 ## Plugin Details
 
