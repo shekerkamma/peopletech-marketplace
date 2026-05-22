@@ -1,31 +1,17 @@
 ---
 name: peopletech-setup
 description: >-
-  Use when the user says "setup", "install all plugins", "onboard", or
-  "peopletech setup". Installs all 9 PeopleTech plugins from the marketplace.
+  Show what's installed after peopletech-all plugin setup. Use when the user
+  says "what do I have", "list plugins", or "peopletech status".
 user_invocable: true
 ---
 
-# PeopleTech Full Setup
+# PeopleTech AI Layer — Installed
 
-Run this to install all 9 PeopleTech plugins. Execute these commands in sequence:
+All 9 plugins were auto-installed as dependencies of `peopletech-all`.
+You have **132 skills** available globally across all projects.
 
-```bash
-claude -p "Run these plugin install commands one by one:
-/plugin install gstack@peopletech-marketplace
-/plugin install ai-analyst@peopletech-marketplace
-/plugin install presentation-suite@peopletech-marketplace
-/plugin install ai-strategy@peopletech-marketplace
-/plugin install content-tools@peopletech-marketplace
-/plugin install integrations@peopletech-marketplace
-/plugin install dev-tools@peopletech-marketplace
-/plugin install cli-anything@peopletech-marketplace
-/plugin install peopletech-ai-layer@peopletech-marketplace"
-```
-
-After installation, the user has 132 skills available globally across all projects.
-
-## What gets installed
+## What's installed
 
 | Plugin | Skills | Category |
 |--------|--------|----------|
@@ -38,3 +24,18 @@ After installation, the user has 132 skills available globally across all projec
 | dev-tools | 8 | Code review, browser agent, utilities |
 | cli-anything | 5 | CLI builder, skill generator |
 | peopletech-ai-layer | 4 | Self-improving hooks, MCP, explorer |
+
+## Post-install (optional)
+
+For `/browse` and `/qa` with headless browser:
+```bash
+cd ~/.claude/plugins/cache/*/gstack && npm install
+```
+
+## Quick test
+
+Try any of these to confirm everything works:
+- `/time-skill` — current time
+- `/cheat` — start a cheat sheet
+- `/analyze` — run product analytics
+- `/drawio` — generate a diagram

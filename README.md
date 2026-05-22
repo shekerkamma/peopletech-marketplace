@@ -1,30 +1,36 @@
 # PeopleTech Plugin Marketplace
 
 Private Claude Code plugin marketplace for the PeopleTech AI Engineering team.
-**9 plugins, 120+ skills** — one marketplace registration, then install what you need.
+**10 plugins, 132 skills** — two commands from zero to full AI Layer.
 
-## Quick Start
+## Quick Start (2 commands)
 
 ```bash
 # 1. Register this marketplace (one time)
 /plugin marketplace add https://github.com/shekerkamma/peopletech-marketplace
 
-# 2. Install everything (or pick what you need below)
+# 2. Install everything — all 9 plugins auto-install as dependencies
+/plugin install peopletech-all@peopletech-marketplace
+```
+
+That's it. All 132 skills are now available globally.
+
+## Pick and choose (alternative)
+
+Don't want everything? Install individual plugins:
+
+```bash
 /plugin install gstack@peopletech-marketplace
 /plugin install ai-analyst@peopletech-marketplace
 /plugin install presentation-suite@peopletech-marketplace
-/plugin install ai-strategy@peopletech-marketplace
-/plugin install content-tools@peopletech-marketplace
-/plugin install integrations@peopletech-marketplace
-/plugin install dev-tools@peopletech-marketplace
-/plugin install cli-anything@peopletech-marketplace
-/plugin install peopletech-ai-layer@peopletech-marketplace
+# ... etc.
 ```
 
 ## Available Plugins
 
 | Plugin | Skills | What it does |
 |--------|--------|-------------|
+| **peopletech-all** | — | Meta-plugin: auto-installs all 9 plugins below via dependencies |
 | **gstack** | 37 | Browser automation, QA, ship, review, deploy, design, investigate, plan reviews, retros |
 | **ai-analyst** | 40 | Product analytics: explore data, run analysis, forecast, define metrics, design experiments, cohort analysis |
 | **presentation-suite** | 10 | Create slides, themes, export PDF/PNG, speaker notes, accessibility, architecture presentations |
@@ -43,9 +49,9 @@ Source: [garrytan/gstack](https://github.com/garrytan/gstack)
 
 `/browse` `/qa` `/ship` `/review` `/investigate` `/design-review` `/plan-ceo-review` `/plan-eng-review` `/retro` `/land-and-deploy` `/canary` `/health` `/checkpoint` `/careful` `/guard` `/freeze` `/autoplan` `/office-hours` and more.
 
-**Note:** This marketplace packages skills only (6MB). For `/browse` and `/qa` with headless browser, also run:
+**Note:** For `/browse` and `/qa` with headless browser, also run:
 ```bash
-cd ~/.claude/plugins/*/gstack && npm install
+cd ~/.claude/plugins/cache/*/gstack && npm install
 ```
 
 ### ai-analyst (40 skills)

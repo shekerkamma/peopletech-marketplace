@@ -1,7 +1,18 @@
 {
   "name": "peopletech-all",
-  "version": "1.0.0",
-  "description": "Meta-plugin: installs ALL PeopleTech plugins in one command (gstack, ai-analyst, presentation-suite, ai-strategy, content-tools, integrations, dev-tools, cli-anything, peopletech-ai-layer). 132 skills total.",
+  "version": "2.0.0",
+  "description": "Meta-plugin: auto-installs ALL 9 PeopleTech plugins (132 skills) via dependencies. One install command, everything lands.",
   "author": {"name": "PeopleTech AI Engineering"},
-  "keywords": ["meta", "all", "setup", "onboarding"]
+  "keywords": ["meta", "all", "setup", "onboarding"],
+  "dependencies": [
+    "gstack@peopletech-marketplace",
+    "ai-analyst@peopletech-marketplace",
+    "presentation-suite@peopletech-marketplace",
+    "ai-strategy@peopletech-marketplace",
+    "content-tools@peopletech-marketplace",
+    "integrations@peopletech-marketplace",
+    "dev-tools@peopletech-marketplace",
+    "cli-anything@peopletech-marketplace",
+    "peopletech-ai-layer@peopletech-marketplace"
+  ]
 }
