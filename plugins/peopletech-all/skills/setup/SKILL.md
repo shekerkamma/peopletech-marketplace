@@ -8,8 +8,8 @@ user_invocable: true
 
 # PeopleTech AI Layer — Installed
 
-All 9 plugins were auto-installed as dependencies of `peopletech-all`.
-You have **132 skills** available globally across all projects.
+All 10 plugins were auto-installed as dependencies of `peopletech-all`.
+You have **136 skills** available globally across all projects.
 
 ## What's installed
 
@@ -24,6 +24,7 @@ You have **132 skills** available globally across all projects.
 | dev-tools | 8 | Code review, browser agent, utilities |
 | cli-anything | 5 | CLI builder, skill generator |
 | peopletech-ai-layer | 4 | Self-improving hooks, MCP, explorer |
+| presales-tools | 4 | Contract review, explainer graphics, workflow viz, conversation prep |
 
 ## Post-install (optional)
 

@@ -1,7 +1,7 @@
 # PeopleTech Plugin Marketplace
 
 Private Claude Code plugin marketplace for the PeopleTech AI Engineering team.
-**10 plugins, 132 skills** — two commands from zero to full AI Layer.
+**11 plugins, 136 skills** — two commands from zero to full AI Layer.
 
 ## Quick Start (2 commands)
 
@@ -9,11 +9,11 @@ Private Claude Code plugin marketplace for the PeopleTech AI Engineering team.
 # 1. Register this marketplace (one time)
 /plugin marketplace add https://github.com/shekerkamma/peopletech-marketplace
 
-# 2. Install everything — all 9 plugins auto-install as dependencies
+# 2. Install everything — all 10 plugins auto-install as dependencies
 /plugin install peopletech-all@peopletech-marketplace
 ```
 
-That's it. All 132 skills are now available globally.
+That's it. All 136 skills are now available globally.
 
 ## Pick and choose (alternative)
 
@@ -30,7 +30,7 @@ Don't want everything? Install individual plugins:
 
 | Plugin | Skills | What it does |
 |--------|--------|-------------|
-| **peopletech-all** | — | Meta-plugin: auto-installs all 9 plugins below via dependencies |
+| **peopletech-all** | — | Meta-plugin: auto-installs all 10 plugins below via dependencies |
 | **gstack** | 37 | Browser automation, QA, ship, review, deploy, design, investigate, plan reviews, retros |
 | **ai-analyst** | 40 | Product analytics: explore data, run analysis, forecast, define metrics, design experiments, cohort analysis |
 | **presentation-suite** | 10 | Create slides, themes, export PDF/PNG, speaker notes, accessibility, architecture presentations |
@@ -40,6 +40,7 @@ Don't want everything? Install individual plugins:
 | **dev-tools** | 8 | Code review, browser agent, cheat sheets, account briefings, time/weather utilities |
 | **cli-anything** | 5 | CLI interface builder for any GUI app, skill generator |
 | **peopletech-ai-layer** | 4 | Self-improving CLAUDE.md hooks, review skill, explorer subagent, codebase-search MCP |
+| **presales-tools** | 4 | Contract review, explainer graphics, workflow visualization, conversation prep |
 
 ## Plugin Details
 
@@ -85,6 +86,12 @@ Full analytics pipeline: `/analyze` then sub-skills for explore-data, run-analys
 ### peopletech-ai-layer (4 components)
 
 Self-improving CLAUDE.md hooks (SessionStart + Stop reflector), customer-facing review skill, read-only explorer subagent, AST-based codebase-search MCP server.
+
+### presales-tools (4 skills)
+
+`/contract-reviewer` `/explainer-graphic` `/workflow-visualizer` `/difficult-conversation-prep`
+
+Enterprise deal toolkit: review contracts and flag risks, create visual explainer infographics, map workflows as interactive HTML diagrams, prepare for tough negotiations with scripts and pushback responses.
 
 ## License
 

@@ -1,0 +1,7 @@
+{
+  "name": "presales-tools",
+  "version": "1.0.0",
+  "description": "Pre-sales toolkit: contract review, explainer graphics, workflow visualization, and difficult conversation prep for enterprise deal cycles.",
+  "author": {"name": "PeopleTech AI Engineering"},
+  "keywords": ["presales", "contracts", "graphics", "workflow", "negotiation"]
+}
