@@ -28,8 +28,12 @@ Save as `config.json`.
 ## Pipeline
 
 ### Stage 1: Content Research → Ingest
-Invoke the `/content-research` skill.
-- Ingest all provided sources (URLs, videos, documents)
+Invoke the `/content-research` skill, enriched with deeper research tools:
+- Use **Exa** (`web_search_exa`) for deep, semantically-rich source discovery (academic papers, technical blogs, industry reports)
+- Use **`/wikipedia`** for baseline context on the topic (definitions, history, key players)
+- Use **`/firecrawl`** to scrape any specific URLs the user provides for full-page content
+- Use **`/content-research`** to ingest all sources (URLs, videos, documents) into structured notes
+- Do NOT fall back to basic WebSearch — always prefer Exa and Firecrawl for richer results
 - Create structured research notes with frontmatter
 - Tag content as `<!-- deck-usable -->` or `<!-- internal-only -->`
 - Extract key claims, data points, and expert opinions

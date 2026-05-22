@@ -37,13 +37,18 @@ Invoke the `/watch` skill on the competitor's demo/presentation video.
 **Pass forward:** competitor claims + positioning + feature list + quotes
 
 ### Stage 2: Content Research → Ingest
-Invoke the `/content-research` skill.
-- Ingest all provided competitor sources (website, blog, social, docs)
+Invoke the `/content-research` skill, enriched with deeper research tools:
+- Use **`/firecrawl`** to scrape the competitor's website (product pages, pricing, case studies, job postings for tech stack clues)
+- Use **Exa** (`web_search_exa` with `category:company`) for company profile, funding, leadership, recent coverage
+- Use **`/hackernews`** to search for community sentiment, discussions, and complaints about the competitor
+- Use **`/podscan`** to find podcast episodes mentioning the competitor (founder interviews, analyst takes)
+- Use **`/content-research`** to ingest any additional sources (blog, social, docs)
+- Do NOT fall back to basic WebSearch — always prefer the richer tools above
 - Map their product capabilities, integrations, and tech stack
 - Identify their go-to-market strategy and target segments
 - Extract customer testimonials, case studies, pricing
 
-**Pass forward:** competitor profile + capabilities map + GTM strategy
+**Pass forward:** competitor profile + capabilities map + GTM strategy + community sentiment
 
 ### Stage 3: AI Strategy Research → Contextualize
 Invoke the `/ai-strategy-researcher` skill.

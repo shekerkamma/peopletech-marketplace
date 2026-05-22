@@ -29,8 +29,11 @@ Save as `config.json`.
 ## Pipeline
 
 ### Stage 1: Account Briefing → Research
-Invoke the `/00-account-briefing` skill.
-- Research the prospect company (size, industry, recent news, key people)
+Invoke the `/00-account-briefing` skill, enriched with deeper research tools:
+- Use **Exa** (`web_search_exa` with `category:company`) for company profile, leadership, funding, strategy
+- Use **`/firecrawl`** to scrape the prospect's website (about page, press releases, careers/job postings for tech clues)
+- Use **`/content-research`** to ingest any prospect content the user provides (videos, LinkedIn posts, blog articles)
+- Do NOT fall back to basic WebSearch — always prefer Exa and Firecrawl for richer, structured results
 - Identify their likely pain points relevant to your offering
 - Surface any recent announcements, earnings, or strategic shifts
 - Find connections between their goals and your solution

@@ -38,8 +38,9 @@ Invoke the `/drawio` skill.
 ### Stage 2: Architecture Presentation → Deck + Doc
 Invoke the `/architecture-presentation` skill.
 - Generate the architecture explanation doc (.md)
-- Generate the 10-slide pptx deck in configured theme
+- Generate the 10-slide pptx deck — use `Hyundai_PeopleTech_AI_Plant_Operations.pptx` as the reference template for theme/colors/layout (if it exists in the working directory)
 - Both derived from the drawio diagram and system description
+- Use **`/notion`** to create a team-accessible page with the architecture doc (if Notion is configured)
 
 **Pass forward:** .md doc path + .pptx path + component descriptions
 

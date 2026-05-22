@@ -48,7 +48,11 @@ Invoke the `/watch` skill on the provided video URL.
 **Pass forward:** structured summary + transcript + topic name
 
 ### Stage 2: Research → Enrich
-Invoke the `/content-research` skill on the extracted content.
+Invoke the `/content-research` skill on the extracted content, enriched with deeper tools:
+- Use **Exa** (`web_search_exa`) to find related sources, papers, and expert commentary on the video's topic
+- Use **`/wikipedia`** for baseline context if the topic involves established concepts
+- Use **`/firecrawl`** if the video references specific websites or products worth scraping
+- Do NOT fall back to basic WebSearch — always prefer Exa and Firecrawl for richer results
 - Create a research note in second-brain format (if in a project with second-brain/)
 - Otherwise create a standalone `<topic>-research.md`
 - Extract deck-usable facts, figures, quotes

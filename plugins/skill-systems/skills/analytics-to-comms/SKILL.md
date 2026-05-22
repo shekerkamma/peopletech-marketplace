@@ -53,12 +53,12 @@ Invoke the `/presentation` skill.
 
 **Pass forward:** slide deck + executive summary
 
-### Stage 4: Slack → Distribute (if enabled)
-Invoke the `/slack` skill.
-- Format a Slack message with: one-line finding, key metric, recommendation
-- Attach or link to the slide deck
-- Post to the configured channel (or draft for review)
+### Stage 4: Distribute → Team Visibility
+Distribute outputs to team systems:
+- Invoke **`/slack`** to post a summary message (one-line finding, key metric, recommendation) to the configured channel
+- Invoke **`/notion`** to create a team-accessible page with the full analysis, charts, and recommendation
 - If Slack not configured: skip and print the message to terminal
+- If Notion not configured: skip and note in output
 
 **Output files:**
 ```
@@ -66,6 +66,7 @@ Invoke the `/slack` skill.
 <topic>-explainer.html
 <topic>-analytics-deck.pptx
 <topic>-slack-draft.md              (if Slack not auto-posted)
++ Notion page                       (if Notion configured)
 ```
 
 ## Completion
